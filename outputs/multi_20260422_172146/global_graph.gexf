@@ -1,0 +1,830 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2026-04-22">
+    <creator>NetworkX 2.5.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="2" title="relations" type="string" />
+      <attribute id="3" title="documents" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="type" type="string" />
+      <attribute id="1" title="documents" type="string" />
+    </attributes>
+    <nodes>
+      <node id="bandung_bondowoso" label="Bandung Bondowoso">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="roro_jonggrang" label="Roro Jonggrang">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="syarat_seribu_candi" label="syarat seribu candi">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="makhluk_halus" label="makhluk halus">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kecerdikan" label="kecerdikan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="tipu_daya" label="tipu daya">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="pembangunan_candi" label="pembangunan candi">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kutukan" label="kutukan">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx;roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="roro_jonggrang_menjadi_arca" label="Roro Jonggrang menjadi arca">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kekuasaan" label="kekuasaan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx;tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="pilihan_perempuan" label="pilihan perempuan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="strategi_penolakan" label="strategi penolakan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="tragedi" label="tragedi">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="konsekuensi_tipu_daya" label="konsekuensi tipu daya">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="bawang_putih" label="Bawang Putih">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="bawang_merah" label="Bawang Merah">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="ibu_tiri" label="Ibu Tiri">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kesabaran" label="kesabaran">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="iri_hati" label="iri hati">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="ketidakadilan" label="ketidakadilan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="penderitaan" label="penderitaan">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="ikan_ajaib" label="ikan ajaib">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="labu" label="labu">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="hadiah" label="hadiah">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="keserakahan" label="keserakahan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="hukuman" label="hukuman">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="keadilan_moral" label="keadilan moral">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx;malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="bawang_merah_dan_ibu_tiri" label="Bawang Merah dan Ibu Tiri">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="balasan_baik" label="balasan baik">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="keutamaan" label="keutamaan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="timun_mas" label="Timun Mas">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="mbok_srini" label="Mbok Srini">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="buto_ijo" label="Buto Ijo">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="perjanjian" label="perjanjian">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="ancaman" label="ancaman">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="biji_mentimun" label="biji mentimun">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="jarum" label="jarum">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="garam" label="garam">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="terasi" label="terasi">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="alat_magis" label="alat magis">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="ikhtiar" label="ikhtiar">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kasih_ibu" label="kasih ibu">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx;timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="keberanian" label="keberanian">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="timun_mas_bertahan" label="Timun Mas bertahan">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="keselamatan" label="keselamatan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="perlindungan" label="perlindungan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </node>
+      <node id="malin_kundang" label="Malin Kundang">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="ibu_malin" label="Ibu Malin">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kekayaan" label="kekayaan">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="asal-usul" label="asal-usul">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="penolakan_ibu" label="penolakan ibu">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="malin_kundang_menjadi_batu" label="Malin Kundang menjadi batu">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="hukuman_moral" label="hukuman moral">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="bakti_kepada_orang_tua" label="bakti kepada orang tua">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kesombongan" label="kesombongan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kejatuhan" label="kejatuhan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="tema_utama" label="tema utama">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="konsekuensi_tindakan" label="konsekuensi tindakan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </node>
+      <node id="tiga_kakak_beradik" label="Tiga kakak beradik">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="penyakit_ibunya" label="penyakit ibunya">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="obat_yang_ada_di_kawah_gunung" label="obat yang ada di kawah gunung">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kedua_kakak_perempuan" label="Kedua kakak perempuan">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="putri_bungsu" label="putri bungsu">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kasih_sayang_dan_tanggung_jawab" label="kasih sayang dan tanggung jawab">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="tanggung_jawab" label="Tanggung jawab">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="sebagai_pengorbanan" label="sebagai pengorbanan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="ular_ndaung" label="Ular N’daung">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="pengorbanan" label="Pengorbanan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="keutuhan_keluarga" label="keutuhan keluarga">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="menjadi_pangeran" label="menjadi pangeran">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="perebutan_pangeran" label="Perebutan pangeran">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="kekerasan_simbolik" label="kekerasan simbolik">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+      <node id="dengan_pangeran" label="dengan pangeran">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+          <attvalue for="1" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="bandung_bondowoso" target="roro_jonggrang" weight="2">
+        <attvalues>
+          <attvalue for="2" value="mencintai;mengutuk" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="bandung_bondowoso" target="makhluk_halus" weight="1">
+        <attvalues>
+          <attvalue for="2" value="memanggil" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="roro_jonggrang" target="bandung_bondowoso" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menolak" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="roro_jonggrang" target="syarat_seribu_candi" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mengajukan" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="syarat_seribu_candi" target="strategi_penolakan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merepresentasikan" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="kecerdikan" target="roro_jonggrang" weight="1">
+        <attvalues>
+          <attvalue for="2" value="digunakan oleh" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="tipu_daya" target="pembangunan_candi" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menggagalkan" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="kutukan" target="roro_jonggrang_menjadi_arca" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mengubah" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="kutukan" target="tragedi" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menguatkan" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="kutukan" target="malin_kundang_menjadi_batu" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mengubah" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="kutukan" target="keadilan_moral" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menguatkan" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="kekuasaan" target="pilihan_perempuan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="berkonflik dengan" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="kekuasaan" target="kekerasan_simbolik" weight="1">
+        <attvalues>
+          <attvalue for="2" value="memicu" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="tragedi" target="konsekuensi_tipu_daya" weight="1">
+        <attvalues>
+          <attvalue for="2" value="berhubungan dengan" />
+          <attvalue for="3" value="roro_jonggrang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="14" source="bawang_putih" target="bawang_merah" weight="1">
+        <attvalues>
+          <attvalue for="2" value="berkonflik dengan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="15" source="bawang_putih" target="kesabaran" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merepresentasikan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="16" source="bawang_merah" target="iri_hati" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merepresentasikan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="17" source="ibu_tiri" target="bawang_merah" weight="1">
+        <attvalues>
+          <attvalue for="2" value="memihak" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="18" source="ibu_tiri" target="ketidakadilan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merepresentasikan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="19" source="kesabaran" target="balasan_baik" weight="1">
+        <attvalues>
+          <attvalue for="2" value="berhubungan dengan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="20" source="iri_hati" target="keutamaan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="berkonflik dengan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="21" source="penderitaan" target="bawang_putih" weight="1">
+        <attvalues>
+          <attvalue for="2" value="dialami oleh" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="22" source="ikan_ajaib" target="bawang_putih" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menolong" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="23" source="labu" target="hadiah" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menghasilkan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="24" source="hadiah" target="keadilan_moral" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menguatkan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="25" source="keserakahan" target="hukuman" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menyebabkan" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="26" source="hukuman" target="bawang_merah_dan_ibu_tiri" weight="1">
+        <attvalues>
+          <attvalue for="2" value="diterima oleh" />
+          <attvalue for="3" value="bawang_merah_bawang_putih_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="27" source="keadilan_moral" target="konsekuensi_tindakan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="berhubungan dengan" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="28" source="timun_mas" target="mbok_srini" weight="1">
+        <attvalues>
+          <attvalue for="2" value="anak dari" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="29" source="timun_mas" target="biji_mentimun" weight="1">
+        <attvalues>
+          <attvalue for="2" value="melawan dengan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="30" source="timun_mas" target="jarum" weight="1">
+        <attvalues>
+          <attvalue for="2" value="melawan dengan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="31" source="timun_mas" target="garam" weight="1">
+        <attvalues>
+          <attvalue for="2" value="melawan dengan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="32" source="timun_mas" target="terasi" weight="1">
+        <attvalues>
+          <attvalue for="2" value="melawan dengan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="33" source="mbok_srini" target="buto_ijo" weight="1">
+        <attvalues>
+          <attvalue for="2" value="membuat perjanjian dengan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="34" source="mbok_srini" target="kasih_ibu" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mewakili" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="35" source="buto_ijo" target="timun_mas" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mengejar" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="36" source="buto_ijo" target="ancaman" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merepresentasikan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="37" source="perjanjian" target="ancaman" weight="1">
+        <attvalues>
+          <attvalue for="2" value="memicu" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="38" source="alat_magis" target="ikhtiar" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merepresentasikan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="39" source="ikhtiar" target="keselamatan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="berhubungan dengan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="40" source="kasih_ibu" target="perlindungan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menguatkan" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="41" source="keberanian" target="timun_mas_bertahan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menolong" />
+          <attvalue for="3" value="timun_mas_ajs_.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="42" source="malin_kundang" target="ibu_malin" weight="2">
+        <attvalues>
+          <attvalue for="2" value="anak dari;menolak mengakui" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="43" source="malin_kundang" target="kekayaan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merantau demi" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="44" source="malin_kundang" target="asal-usul" weight="1">
+        <attvalues>
+          <attvalue for="2" value="melupakan" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="45" source="ibu_malin" target="kasih_ibu" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mewakili" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="46" source="kekayaan" target="bakti_kepada_orang_tua" weight="1">
+        <attvalues>
+          <attvalue for="2" value="berkonflik dengan" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="47" source="penolakan_ibu" target="kutukan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="memicu" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="48" source="malin_kundang_menjadi_batu" target="hukuman_moral" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merepresentasikan" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="49" source="bakti_kepada_orang_tua" target="tema_utama" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menjadi" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="50" source="kesombongan" target="kejatuhan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menyebabkan" />
+          <attvalue for="3" value="malin_kundang_ajs.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="51" source="tiga_kakak_beradik" target="penyakit_ibunya" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mengkhawatirkan" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="52" source="penyakit_ibunya" target="obat_yang_ada_di_kawah_gunung" weight="1">
+        <attvalues>
+          <attvalue for="2" value="membutuhkan" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="53" source="kedua_kakak_perempuan" target="putri_bungsu" weight="2">
+        <attvalues>
+          <attvalue for="2" value="berkonflik dengan;memberi legitimasi" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="54" source="putri_bungsu" target="kasih_sayang_dan_tanggung_jawab" weight="1">
+        <attvalues>
+          <attvalue for="2" value="merepresentasikan" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="55" source="putri_bungsu" target="dengan_pangeran" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menikah" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="56" source="tanggung_jawab" target="sebagai_pengorbanan" weight="1">
+        <attvalues>
+          <attvalue for="2" value="diwujudkan" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="57" source="ular_ndaung" target="putri_bungsu" weight="1">
+        <attvalues>
+          <attvalue for="2" value="membantu" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="58" source="ular_ndaung" target="menjadi_pangeran" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menjelma" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="59" source="pengorbanan" target="keutuhan_keluarga" weight="1">
+        <attvalues>
+          <attvalue for="2" value="menjaga" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="60" source="perebutan_pangeran" target="keutuhan_keluarga" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mengancam" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+      <edge id="61" source="kekerasan_simbolik" target="keutuhan_keluarga" weight="1">
+        <attvalues>
+          <attvalue for="2" value="mengancam" />
+          <attvalue for="3" value="tabel_relasi_ajs_putri_bungsu.xlsx" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

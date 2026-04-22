@@ -1,0 +1,47 @@
+Id,Label,Type,Degree,InDegree,OutDegree,Betweenness,Closeness,PageRank,DocumentCount,Documents
+timun_mas,Timun Mas,Tokoh,6,1,5,0.005555555555555556,0.02962962962962963,0.019964064310973934,1,timun_mas_ajs_.xlsx
+bawang_putih,Bawang Putih,Tokoh,4,2,2,0.00505050505050505,0.044444444444444446,0.032540821322458675,1,bawang_merah_bawang_putih_ajs.xlsx
+bawang_merah,Bawang Merah,Tokoh,3,2,1,0.00404040404040404,0.05925925925925926,0.031003724114183482,1,bawang_merah_bawang_putih_ajs.xlsx
+buto_ijo,Buto Ijo,Tokoh,3,1,2,0.0035353535353535356,0.02962962962962963,0.018616573901925802,1,timun_mas_ajs_.xlsx
+roro_jonggrang,Roro Jonggrang,Tokoh,4,2,2,0.0030303030303030303,0.044444444444444446,0.03836710052510344,1,roro_jonggrang_ajs.xlsx
+mbok_srini,Mbok Srini,Tokoh,3,1,2,0.0030303030303030303,0.02962962962962963,0.015445891919706689,1,timun_mas_ajs_.xlsx
+iri_hati,iri hati,Tema,2,1,1,0.002525252525252525,0.0505050505050505,0.038405789356809654,1,bawang_merah_bawang_putih_ajs.xlsx
+syarat_seribu_candi,syarat seribu candi,Motif,2,1,1,0.0015151515151515152,0.04,0.028355157225165847,1,roro_jonggrang_ajs.xlsx
+kesabaran,kesabaran,Tema,2,1,1,0.0015151515151515152,0.04,0.025881507539757716,1,bawang_merah_bawang_putih_ajs.xlsx
+kasih_ibu,kasih ibu,Tema,2,1,1,0.0015151515151515152,0.03333333333333333,0.018616573901925802,1,timun_mas_ajs_.xlsx
+bandung_bondowoso,Bandung Bondowoso,Tokoh,3,1,2,0.00101010101010101,0.02962962962962963,0.028355157225165847,1,roro_jonggrang_ajs.xlsx
+ikhtiar,ikhtiar,Tema,2,1,1,0.000505050505050505,0.022222222222222223,0.022296388173607143,1,timun_mas_ajs_.xlsx
+hadiah,hadiah,Motif,2,1,1,0.000505050505050505,0.022222222222222223,0.022296388173607143,1,bawang_merah_bawang_putih_ajs.xlsx
+hukuman,hukuman,Tema,2,1,1,0.000505050505050505,0.022222222222222223,0.022296388173607143,1,bawang_merah_bawang_putih_ajs.xlsx
+tragedi,tragedi,Tema,2,1,1,0.000505050505050505,0.022222222222222223,0.017174171599181377,1,roro_jonggrang_ajs.xlsx
+ancaman,ancaman,Tema,2,2,0,0.0,0.050793650793650794,0.030208497459825467,1,timun_mas_ajs_.xlsx
+ibu_tiri,Ibu Tiri,Tokoh,2,0,2,0.0,0.0,0.01205195502475561,1,bawang_merah_bawang_putih_ajs.xlsx
+kutukan,kutukan,Motif,2,0,2,0.0,0.0,0.01205195502475561,1,roro_jonggrang_ajs.xlsx
+keutamaan,keutamaan,Tema,1,1,0,0.0,0.047058823529411764,0.04469641115925297,1,bawang_merah_bawang_putih_ajs.xlsx
+strategi_penolakan,strategi penolakan,Tema,1,1,0,0.0,0.03950617283950617,0.03615802355200006,1,roro_jonggrang_ajs.xlsx
+balasan_baik,balasan baik,Tema,1,1,0,0.0,0.03950617283950617,0.034052121386521486,1,bawang_merah_bawang_putih_ajs.xlsx
+keselamatan,keselamatan,Tema,1,1,0,0.0,0.02962962962962963,0.031003724114183482,1,timun_mas_ajs_.xlsx
+keadilan_moral,keadilan moral,Tema,1,1,0,0.0,0.02962962962962963,0.031003724114183482,1,bawang_merah_bawang_putih_ajs.xlsx
+bawang_merah_dan_ibu_tiri,Bawang Merah dan Ibu Tiri,Tokoh,1,1,0,0.0,0.02962962962962963,0.031003724114183482,1,bawang_merah_bawang_putih_ajs.xlsx
+perlindungan,perlindungan,Tema,1,1,0,0.0,0.035555555555555556,0.027876173597192258,1,timun_mas_ajs_.xlsx
+konsekuensi_tipu_daya,konsekuensi tipu daya,Tema,1,1,0,0.0,0.02962962962962963,0.02665005614389531,1,roro_jonggrang_ajs.xlsx
+timun_mas_bertahan,Timun Mas bertahan,Motif,1,1,0,0.0,0.022222222222222223,0.022296388173607143,1,timun_mas_ajs_.xlsx
+pembangunan_candi,pembangunan candi,Motif,1,1,0,0.0,0.022222222222222223,0.022296388173607143,1,roro_jonggrang_ajs.xlsx
+pilihan_perempuan,pilihan perempuan,Tema,1,1,0,0.0,0.022222222222222223,0.022296388173607143,1,roro_jonggrang_ajs.xlsx
+makhluk_halus,makhluk halus,Motif,1,1,0,0.0,0.03333333333333333,0.02008731120050376,1,roro_jonggrang_ajs.xlsx
+ketidakadilan,ketidakadilan,Tema,1,1,0,0.0,0.022222222222222223,0.017174171599181377,1,bawang_merah_bawang_putih_ajs.xlsx
+roro_jonggrang_menjadi_arca,Roro Jonggrang menjadi arca,Motif,1,1,0,0.0,0.022222222222222223,0.017174171599181377,1,roro_jonggrang_ajs.xlsx
+biji_mentimun,biji mentimun,Motif,1,1,0,0.0,0.03333333333333333,0.015445891919706689,1,timun_mas_ajs_.xlsx
+jarum,jarum,Motif,1,1,0,0.0,0.03333333333333333,0.015445891919706689,1,timun_mas_ajs_.xlsx
+garam,garam,Motif,1,1,0,0.0,0.03333333333333333,0.015445891919706689,1,timun_mas_ajs_.xlsx
+terasi,terasi,Motif,1,1,0,0.0,0.03333333333333333,0.015445891919706689,1,timun_mas_ajs_.xlsx
+perjanjian,perjanjian,Motif,1,0,1,0.0,0.0,0.01205195502475561,1,timun_mas_ajs_.xlsx
+alat_magis,alat magis,Motif,1,0,1,0.0,0.0,0.01205195502475561,1,timun_mas_ajs_.xlsx
+keberanian,keberanian,Tema,1,0,1,0.0,0.0,0.01205195502475561,1,timun_mas_ajs_.xlsx
+penderitaan,penderitaan,Motif,1,0,1,0.0,0.0,0.01205195502475561,1,bawang_merah_bawang_putih_ajs.xlsx
+ikan_ajaib,ikan ajaib,Motif,1,0,1,0.0,0.0,0.01205195502475561,1,bawang_merah_bawang_putih_ajs.xlsx
+labu,labu,Motif,1,0,1,0.0,0.0,0.01205195502475561,1,bawang_merah_bawang_putih_ajs.xlsx
+keserakahan,keserakahan,Tema,1,0,1,0.0,0.0,0.01205195502475561,1,bawang_merah_bawang_putih_ajs.xlsx
+kecerdikan,kecerdikan,Tema,1,0,1,0.0,0.0,0.01205195502475561,1,roro_jonggrang_ajs.xlsx
+tipu_daya,tipu daya,Motif,1,0,1,0.0,0.0,0.01205195502475561,1,roro_jonggrang_ajs.xlsx
+kekuasaan,kekuasaan,Tema,1,0,1,0.0,0.0,0.01205195502475561,1,roro_jonggrang_ajs.xlsx

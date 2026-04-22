@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Analisis Multi Karya</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f8fc; margin: 0; padding: 24px; color: #1f2937; }
+        .container { max-width: 1200px; margin: auto; }
+        .card { background: white; border-radius: 14px; padding: 20px; margin-bottom: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+        .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:16px; }
+        .stat { background:#faf8ff; border:1px solid #e8defd; border-radius:12px; padding:16px; }
+        .stat h3 { margin:0 0 6px; font-size:0.95rem; color:#5b3cc4; }
+        .stat .value { font-size:1.5rem; font-weight:700; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+        th, td { padding: 10px; border-bottom: 1px solid #e5e7eb; text-align: left; vertical-align: top; }
+        th { background: #f9fafb; }
+        .btn { display: inline-block; background: #5b3cc4; color: white; padding: 10px 16px; border-radius: 10px; text-decoration: none; margin-right: 8px; }
+        .muted { color:#6b7280; }
+        img { max-width:100%; border-radius:12px; border:1px solid #e5e7eb; }
+        .pill { display:inline-block; padding:4px 8px; background:#f3f4f6; border-radius:999px; margin:2px; font-size:0.82rem; }
+        .small { font-size:0.88rem; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h1>Hasil Analisis Multi Karya</h1>
+        <a href="/" class="btn">Kembali ke Dashboard</a>
+        {% if comparison.global_nodes_csv_path %}
+        <a href="/outputs/{{ comparison.global_nodes_csv_path }}" class="btn">Unduh Node Global</a>
+        <a href="/outputs/{{ comparison.global_edges_csv_path }}" class="btn">Unduh Edge Global</a>
+        <a href="/outputs/{{ comparison.global_gexf_path }}" class="btn">Unduh GEXF</a>
+        {% endif %}
+    </div>
+
+    <div class="card grid">
+        <div class="stat">
+            <h3>Total karya</h3>
+            <div class="value">{{ comparison.n_files }}</div>
+        </div>
+        <div class="stat">
+            <h3>Node global</h3>
+            <div class="value">{{ comparison.global_summary.n_nodes if comparison.global_summary else 0 }}</div>
+        </div>
+        <div class="stat">
+            <h3>Relasi global</h3>
+            <div class="value">{{ comparison.global_summary.n_edges if comparison.global_summary else 0 }}</div>
+        </div>
+        <div class="stat">
+            <h3>Shared concepts</h3>
+            <div class="value">{{ comparison.shared_concepts|length }}</div>
+        </div>
+    </div>
+
+    {% if comparison.global_graph_path %}
+    <div class="card">
+        <h2>Jejaring Semantik Global Lintas Karya</h2>
+        <p class="muted">Graf ini menggabungkan seluruh karya menjadi satu jaringan untuk melihat konsep bersama dan pola keterhubungan antarteks.</p>
+        <img src="/outputs/{{ comparison.global_graph_path }}" alt="Global Graph">
+    </div>
+    {% endif %}
+
+    <div class="card">
+        <h2>Tabel Ringkasan per Karya</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Filename</th>
+                    <th>Node</th>
+                    <th>Relasi</th>
+                    <th>Top Degree</th>
+                    <th>Top Betweenness</th>
+                    <th>Top PageRank</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in comparison.items_list %}
+                <tr>
+                    <td>{{ item.filename }}</td>
+                    <td>{{ item.n_nodes }}</td>
+                    <td>{{ item.n_edges }}</td>
+                    <td>{{ item.top_degree }}</td>
+                    <td>{{ item.top_betweenness }}</td>
+                    <td>{{ item.top_pagerank }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Shared Concepts</h2>
+        <p class="muted">Konsep yang muncul pada lebih dari satu karya. Ini kandidat awal jejak intertekstual.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Konsep</th>
+                    <th>Tipe</th>
+                    <th>Jumlah Karya</th>
+                    <th>Degree</th>
+                    <th>Karya</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in comparison.shared_concepts %}
+                <tr>
+                    <td>{{ row.label }}</td>
+                    <td>{{ row.type }}</td>
+                    <td>{{ row.document_count }}</td>
+                    <td>{{ row.degree }}</td>
+                    <td class="small">{{ row.documents }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Bridging Concepts</h2>
+        <p class="muted">Konsep lintas karya dengan peran penghubung paling kuat dalam jaringan global.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Konsep</th>
+                    <th>Tipe</th>
+                    <th>Betweenness</th>
+                    <th>Jumlah Karya</th>
+                    <th>Karya</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in comparison.bridging_concepts %}
+                <tr>
+                    <td>{{ row.label }}</td>
+                    <td>{{ row.type }}</td>
+                    <td>{{ '%.4f'|format(row.betweenness) }}</td>
+                    <td>{{ row.document_count }}</td>
+                    <td class="small">{{ row.documents }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Unique Concepts</h2>
+        <p class="muted">Konsep yang hanya khas pada satu karya. Bagian ini membantu membaca ciri pembeda setiap teks.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Konsep</th>
+                    <th>Tipe</th>
+                    <th>Karya</th>
+                    <th>Degree</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in comparison.unique_concepts %}
+                <tr>
+                    <td>{{ row.label }}</td>
+                    <td>{{ row.type }}</td>
+                    <td>{{ row.document }}</td>
+                    <td>{{ row.degree }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Kedekatan Antar Karya</h2>
+        <p class="muted">Tabel ini menunjukkan pasangan karya yang berbagi konsep yang sama. Semakin tinggi shared concepts dan skor Jaccard, semakin dekat secara semantik.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Karya 1</th>
+                    <th>Karya 2</th>
+                    <th>Shared Concepts</th>
+                    <th>Jaccard</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in comparison.doc_links %}
+                <tr>
+                    <td>{{ row.source }}</td>
+                    <td>{{ row.target }}</td>
+                    <td>{{ row.shared_concepts }}</td>
+                    <td>{{ '%.4f'|format(row.jaccard) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

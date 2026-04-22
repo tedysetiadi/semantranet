@@ -1,0 +1,17 @@
+Id,Label,Type,Degree,InDegree,OutDegree,Betweenness,Closeness,PageRank
+putri_bungsu,putri bungsu,Tokoh,4,2,2,0.01904761904761905,0.13333333333333333,0.08416922473737365
+penyakit_ibunya,penyakit ibunya,Konsep,2,1,1,0.004761904761904762,0.06666666666666667,0.06844537468047718
+kekerasan_simbolik,kekerasan simbolik,Motif,2,1,1,0.004761904761904762,0.06666666666666667,0.06844537468047718
+keutuhan_keluarga,keutuhan keluarga,Konsep,3,3,0,0.0,0.21333333333333335,0.15807226227809806
+ular_ndaung,Ular N’daung,Konsep,2,0,2,0.0,0.0,0.03699767456668425
+obat_yang_ada_di_kawah_gunung,obat yang ada di kawah gunung,Konsep,1,1,0,0.0,0.08888888888888888,0.0951768620505122
+kasih_sayang_dan_tanggung_jawab,kasih sayang dan tanggung jawab,Tema,1,1,0,0.0,0.12,0.07277014015110697
+dengan_pangeran,dengan pangeran,Tokoh,1,1,0,0.0,0.12,0.07277014015110697
+sebagai_pengorbanan,sebagai pengorbanan,Tema,1,1,0,0.0,0.06666666666666667,0.06844537468047718
+menjadi_pangeran,menjadi pangeran,Tokoh,1,1,0,0.0,0.06666666666666667,0.05272152462358072
+tiga_kakak_beradik,Tiga kakak beradik,Konsep,1,0,1,0.0,0.0,0.03699767456668425
+kedua_kakak_perempuan,Kedua kakak perempuan,Konsep,1,0,1,0.0,0.0,0.03699767456668425
+tanggung_jawab,Tanggung jawab,Tema,1,0,1,0.0,0.0,0.03699767456668425
+pengorbanan,Pengorbanan,Tema,1,0,1,0.0,0.0,0.03699767456668425
+perebutan_pangeran,Perebutan pangeran,Tokoh,1,0,1,0.0,0.0,0.03699767456668425
+kekuasaan,Kekuasaan,Tema,1,0,1,0.0,0.0,0.03699767456668425

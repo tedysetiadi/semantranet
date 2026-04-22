@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2026-04-22">
+    <creator>NetworkX 2.5.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="1" title="relations" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="tiga_kakak_beradik" label="Tiga kakak beradik">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+        </attvalues>
+      </node>
+      <node id="penyakit_ibunya" label="penyakit ibunya">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+        </attvalues>
+      </node>
+      <node id="obat_yang_ada_di_kawah_gunung" label="obat yang ada di kawah gunung">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+        </attvalues>
+      </node>
+      <node id="kedua_kakak_perempuan" label="Kedua kakak perempuan">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+        </attvalues>
+      </node>
+      <node id="putri_bungsu" label="putri bungsu">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+        </attvalues>
+      </node>
+      <node id="kasih_sayang_dan_tanggung_jawab" label="kasih sayang dan tanggung jawab">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+        </attvalues>
+      </node>
+      <node id="tanggung_jawab" label="Tanggung jawab">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+        </attvalues>
+      </node>
+      <node id="sebagai_pengorbanan" label="sebagai pengorbanan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+        </attvalues>
+      </node>
+      <node id="ular_ndaung" label="Ular N’daung">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+        </attvalues>
+      </node>
+      <node id="pengorbanan" label="Pengorbanan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+        </attvalues>
+      </node>
+      <node id="keutuhan_keluarga" label="keutuhan keluarga">
+        <attvalues>
+          <attvalue for="0" value="Konsep" />
+        </attvalues>
+      </node>
+      <node id="menjadi_pangeran" label="menjadi pangeran">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+        </attvalues>
+      </node>
+      <node id="perebutan_pangeran" label="Perebutan pangeran">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+        </attvalues>
+      </node>
+      <node id="kekuasaan" label="Kekuasaan">
+        <attvalues>
+          <attvalue for="0" value="Tema" />
+        </attvalues>
+      </node>
+      <node id="kekerasan_simbolik" label="kekerasan simbolik">
+        <attvalues>
+          <attvalue for="0" value="Motif" />
+        </attvalues>
+      </node>
+      <node id="dengan_pangeran" label="dengan pangeran">
+        <attvalues>
+          <attvalue for="0" value="Tokoh" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="tiga_kakak_beradik" target="penyakit_ibunya" weight="1">
+        <attvalues>
+          <attvalue for="1" value="mengkhawatirkan" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="penyakit_ibunya" target="obat_yang_ada_di_kawah_gunung" weight="1">
+        <attvalues>
+          <attvalue for="1" value="membutuhkan" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="kedua_kakak_perempuan" target="putri_bungsu" weight="2">
+        <attvalues>
+          <attvalue for="1" value="berkonflik dengan;memberi legitimasi" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="putri_bungsu" target="kasih_sayang_dan_tanggung_jawab" weight="1">
+        <attvalues>
+          <attvalue for="1" value="merepresentasikan" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="putri_bungsu" target="dengan_pangeran" weight="1">
+        <attvalues>
+          <attvalue for="1" value="menikah" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="tanggung_jawab" target="sebagai_pengorbanan" weight="1">
+        <attvalues>
+          <attvalue for="1" value="diwujudkan" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="ular_ndaung" target="putri_bungsu" weight="1">
+        <attvalues>
+          <attvalue for="1" value="membantu" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="ular_ndaung" target="menjadi_pangeran" weight="1">
+        <attvalues>
+          <attvalue for="1" value="menjelma" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="pengorbanan" target="keutuhan_keluarga" weight="1">
+        <attvalues>
+          <attvalue for="1" value="menjaga" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="perebutan_pangeran" target="keutuhan_keluarga" weight="1">
+        <attvalues>
+          <attvalue for="1" value="mengancam" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="kekuasaan" target="kekerasan_simbolik" weight="1">
+        <attvalues>
+          <attvalue for="1" value="memicu" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="kekerasan_simbolik" target="keutuhan_keluarga" weight="1">
+        <attvalues>
+          <attvalue for="1" value="mengancam" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

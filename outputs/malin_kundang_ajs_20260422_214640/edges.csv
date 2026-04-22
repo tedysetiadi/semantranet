@@ -1,0 +1,13 @@
+Source,Relation,Target,Weight
+Malin Kundang,anak dari;menolak mengakui,Ibu Malin,2
+Malin Kundang,merantau demi,kekayaan,1
+Malin Kundang,melupakan,asal-usul,1
+Ibu Malin,mewakili,kasih ibu,1
+kekayaan,berkonflik dengan,bakti kepada orang tua,1
+penolakan ibu,memicu,kutukan,1
+kutukan,mengubah,Malin Kundang menjadi batu,1
+kutukan,menguatkan,keadilan moral,1
+Malin Kundang menjadi batu,merepresentasikan,hukuman moral,1
+bakti kepada orang tua,menjadi,tema utama,1
+kesombongan,menyebabkan,kejatuhan,1
+keadilan moral,berhubungan dengan,konsekuensi tindakan,1

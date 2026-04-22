@@ -1,0 +1,74 @@
+Id,Label,Type,Degree,InDegree,OutDegree,Betweenness,Closeness,PageRank,DocumentCount,Documents
+timun_mas,Timun Mas,Tokoh,6,1,5,0.0021517996870109544,0.018518518518518517,0.01257417100375497,1,timun_mas_ajs_.xlsx
+bawang_putih,Bawang Putih,Tokoh,4,2,2,0.0019561815336463224,0.027777777777777776,0.020494965384907148,1,bawang_merah_bawang_putih_ajs.xlsx
+bawang_merah,Bawang Merah,Tokoh,3,2,1,0.001564945226917058,0.037037037037037035,0.01952755221221268,1,bawang_merah_bawang_putih_ajs.xlsx
+kutukan,kutukan,Motif,5,1,4,0.0013693270735524257,0.013888888888888888,0.014042928249401206,2,malin_kundang_ajs.xlsx; roro_jonggrang_ajs.xlsx
+buto_ijo,Buto Ijo,Tokoh,3,1,2,0.0013693270735524257,0.018518518518518517,0.011725419907367862,1,timun_mas_ajs_.xlsx
+roro_jonggrang,Roro Jonggrang,Tokoh,4,2,2,0.0011737089201877935,0.027777777777777776,0.024160478034046695,1,roro_jonggrang_ajs.xlsx
+mbok_srini,Mbok Srini,Tokoh,3,1,2,0.0011737089201877935,0.018518518518518517,0.009728477913853563,1,timun_mas_ajs_.xlsx
+kasih_ibu,kasih ibu,Tema,3,2,1,0.0009780907668231612,0.03858024691358025,0.02091976902427954,2,malin_kundang_ajs.xlsx; timun_mas_ajs_.xlsx
+iri_hati,iri hati,Tema,2,1,1,0.0009780907668231612,0.03156565656565657,0.024188887423587255,1,bawang_merah_bawang_putih_ajs.xlsx
+putri_bungsu,putri bungsu,Tokoh,4,2,2,0.000782472613458529,0.027777777777777776,0.017268946817154178,1,tabel_relasi_ajs_putri_bungsu.xlsx
+keadilan_moral,keadilan moral,Tema,3,2,1,0.000782472613458529,0.037037037037037035,0.022511717486792038,2,bawang_merah_bawang_putih_ajs.xlsx; malin_kundang_ajs.xlsx
+syarat_seribu_candi,syarat seribu candi,Motif,2,1,1,0.0005868544600938967,0.024999999999999998,0.017861896820258374,1,roro_jonggrang_ajs.xlsx
+kesabaran,kesabaran,Tema,2,1,1,0.0005868544600938967,0.024999999999999998,0.01630153364445971,1,bawang_merah_bawang_putih_ajs.xlsx
+bandung_bondowoso,Bandung Bondowoso,Tokoh,3,1,2,0.0003912363067292645,0.018518518518518517,0.017861896820258374,1,roro_jonggrang_ajs.xlsx
+bakti_kepada_orang_tua,bakti kepada orang tua,Tema,2,1,1,0.0003912363067292645,0.018518518518518517,0.015414084240104074,1,malin_kundang_ajs.xlsx
+hadiah,hadiah,Motif,2,1,1,0.0003912363067292645,0.013888888888888888,0.014042928249401206,1,bawang_merah_bawang_putih_ajs.xlsx
+ibu_malin,Ibu Malin,Tokoh,2,1,1,0.0003912363067292645,0.013888888888888888,0.010816909681648236,1,malin_kundang_ajs.xlsx
+tragedi,tragedi,Tema,2,1,1,0.0003912363067292645,0.018518518518518517,0.01057505638847462,1,roro_jonggrang_ajs.xlsx
+malin_kundang_menjadi_batu,Malin Kundang menjadi batu,Motif,2,1,1,0.0003912363067292645,0.018518518518518517,0.01057505638847462,1,malin_kundang_ajs.xlsx
+kekayaan,kekayaan,Konsep,2,1,1,0.0003912363067292645,0.013888888888888888,0.00920390039777175,1,malin_kundang_ajs.xlsx
+hukuman,hukuman,Tema,2,1,1,0.00019561815336463224,0.013888888888888888,0.014042928249401206,1,bawang_merah_bawang_putih_ajs.xlsx
+ikhtiar,ikhtiar,Tema,2,1,1,0.00019561815336463224,0.013888888888888888,0.014042928249401206,1,timun_mas_ajs_.xlsx
+penyakit_ibunya,penyakit ibunya,Konsep,2,1,1,0.00019561815336463224,0.013888888888888888,0.014042928249401206,1,tabel_relasi_ajs_putri_bungsu.xlsx
+kekerasan_simbolik,kekerasan simbolik,Motif,2,1,1,0.00019561815336463224,0.013888888888888888,0.010816909681648236,1,tabel_relasi_ajs_putri_bungsu.xlsx
+keutuhan_keluarga,keutuhan keluarga,Tema,3,3,0,0.0,0.044444444444444446,0.029689314501818827,1,tabel_relasi_ajs_putri_bungsu.xlsx
+malin_kundang,Malin Kundang,Tokoh,3,0,3,0.0,0.0,0.0075908911138952645,1,malin_kundang_ajs.xlsx
+ancaman,ancaman,Tema,2,2,0,0.0,0.031746031746031744,0.01902620813926091,1,timun_mas_ajs_.xlsx
+kekuasaan,kekuasaan,Tema,2,0,2,0.0,0.0,0.0075908911138952645,2,roro_jonggrang_ajs.xlsx; tabel_relasi_ajs_putri_bungsu.xlsx
+ibu_tiri,Ibu Tiri,Tokoh,2,0,2,0.0,0.0,0.0075908911138952645,1,bawang_merah_bawang_putih_ajs.xlsx
+ular_ndaung,Ular N’daung,Konsep,2,0,2,0.0,0.0,0.0075908911138952645,1,tabel_relasi_ajs_putri_bungsu.xlsx
+keutamaan,keutamaan,Tema,1,1,0,0.0,0.029411764705882353,0.028152363115131144,1,bawang_merah_bawang_putih_ajs.xlsx
+konsekuensi_tindakan,konsekuensi tindakan,Tema,1,1,0,0.0,0.03156565656565657,0.026725377217133764,1,malin_kundang_ajs.xlsx
+perlindungan,perlindungan,Tema,1,1,0,0.0,0.03333333333333333,0.025372742462113438,1,timun_mas_ajs_.xlsx
+strategi_penolakan,strategi penolakan,Tema,1,1,0,0.0,0.024691358024691357,0.022767215790863504,1,roro_jonggrang_ajs.xlsx
+balasan_baik,balasan baik,Tema,1,1,0,0.0,0.024691358024691357,0.021446575442181516,1,bawang_merah_bawang_putih_ajs.xlsx
+tema_utama,tema utama,Tema,1,1,0,0.0,0.020833333333333332,0.020692886015056325,1,malin_kundang_ajs.xlsx
+bawang_merah_dan_ibu_tiri,Bawang Merah dan Ibu Tiri,Tokoh,1,1,0,0.0,0.018518518518518517,0.01952755221221268,1,bawang_merah_bawang_putih_ajs.xlsx
+keselamatan,keselamatan,Tema,1,1,0,0.0,0.018518518518518517,0.01952755221221268,1,timun_mas_ajs_.xlsx
+obat_yang_ada_di_kawah_gunung,obat yang ada di kawah gunung,Konsep,1,1,0,0.0,0.018518518518518517,0.01952755221221268,1,tabel_relasi_ajs_putri_bungsu.xlsx
+konsekuensi_tipu_daya,konsekuensi tipu daya,Tema,1,1,0,0.0,0.020833333333333332,0.016579418042947717,1,roro_jonggrang_ajs.xlsx
+hukuman_moral,hukuman moral,Tema,1,1,0,0.0,0.020833333333333332,0.016579418042947717,1,malin_kundang_ajs.xlsx
+kasih_sayang_dan_tanggung_jawab,kasih sayang dan tanggung jawab,Tema,1,1,0,0.0,0.024999999999999998,0.014930377653756842,1,tabel_relasi_ajs_putri_bungsu.xlsx
+dengan_pangeran,dengan pangeran,Tokoh,1,1,0,0.0,0.024999999999999998,0.014930377653756842,1,tabel_relasi_ajs_putri_bungsu.xlsx
+pembangunan_candi,pembangunan candi,Motif,1,1,0,0.0,0.013888888888888888,0.014042928249401206,1,roro_jonggrang_ajs.xlsx
+timun_mas_bertahan,Timun Mas bertahan,Motif,1,1,0,0.0,0.013888888888888888,0.014042928249401206,1,timun_mas_ajs_.xlsx
+kejatuhan,kejatuhan,Tema,1,1,0,0.0,0.013888888888888888,0.014042928249401206,1,malin_kundang_ajs.xlsx
+sebagai_pengorbanan,sebagai pengorbanan,Tema,1,1,0,0.0,0.013888888888888888,0.014042928249401206,1,tabel_relasi_ajs_putri_bungsu.xlsx
+makhluk_halus,makhluk halus,Motif,1,1,0,0.0,0.020833333333333332,0.012649666006218009,1,roro_jonggrang_ajs.xlsx
+pilihan_perempuan,pilihan perempuan,Tema,1,1,0,0.0,0.013888888888888888,0.010816909681648236,1,roro_jonggrang_ajs.xlsx
+ketidakadilan,ketidakadilan,Tema,1,1,0,0.0,0.013888888888888888,0.010816909681648236,1,bawang_merah_bawang_putih_ajs.xlsx
+menjadi_pangeran,menjadi pangeran,Tokoh,1,1,0,0.0,0.013888888888888888,0.010816909681648236,1,tabel_relasi_ajs_putri_bungsu.xlsx
+roro_jonggrang_menjadi_arca,Roro Jonggrang menjadi arca,Motif,1,1,0,0.0,0.018518518518518517,0.01057505638847462,1,roro_jonggrang_ajs.xlsx
+biji_mentimun,biji mentimun,Motif,1,1,0,0.0,0.020833333333333332,0.009728477913853563,1,timun_mas_ajs_.xlsx
+jarum,jarum,Motif,1,1,0,0.0,0.020833333333333332,0.009728477913853563,1,timun_mas_ajs_.xlsx
+garam,garam,Motif,1,1,0,0.0,0.020833333333333332,0.009728477913853563,1,timun_mas_ajs_.xlsx
+terasi,terasi,Motif,1,1,0,0.0,0.020833333333333332,0.009728477913853563,1,timun_mas_ajs_.xlsx
+asal-usul,asal-usul,Konsep,1,1,0,0.0,0.013888888888888888,0.00920390039777175,1,malin_kundang_ajs.xlsx
+kecerdikan,kecerdikan,Tema,1,0,1,0.0,0.0,0.0075908911138952645,1,roro_jonggrang_ajs.xlsx
+tipu_daya,tipu daya,Motif,1,0,1,0.0,0.0,0.0075908911138952645,1,roro_jonggrang_ajs.xlsx
+penderitaan,penderitaan,Motif,1,0,1,0.0,0.0,0.0075908911138952645,1,bawang_merah_bawang_putih_ajs.xlsx
+ikan_ajaib,ikan ajaib,Motif,1,0,1,0.0,0.0,0.0075908911138952645,1,bawang_merah_bawang_putih_ajs.xlsx
+labu,labu,Motif,1,0,1,0.0,0.0,0.0075908911138952645,1,bawang_merah_bawang_putih_ajs.xlsx
+keserakahan,keserakahan,Tema,1,0,1,0.0,0.0,0.0075908911138952645,1,bawang_merah_bawang_putih_ajs.xlsx
+perjanjian,perjanjian,Motif,1,0,1,0.0,0.0,0.0075908911138952645,1,timun_mas_ajs_.xlsx
+alat_magis,alat magis,Motif,1,0,1,0.0,0.0,0.0075908911138952645,1,timun_mas_ajs_.xlsx
+keberanian,keberanian,Tema,1,0,1,0.0,0.0,0.0075908911138952645,1,timun_mas_ajs_.xlsx
+penolakan_ibu,penolakan ibu,Motif,1,0,1,0.0,0.0,0.0075908911138952645,1,malin_kundang_ajs.xlsx
+kesombongan,kesombongan,Tema,1,0,1,0.0,0.0,0.0075908911138952645,1,malin_kundang_ajs.xlsx
+tiga_kakak_beradik,Tiga kakak beradik,Konsep,1,0,1,0.0,0.0,0.0075908911138952645,1,tabel_relasi_ajs_putri_bungsu.xlsx
+kedua_kakak_perempuan,Kedua kakak perempuan,Konsep,1,0,1,0.0,0.0,0.0075908911138952645,1,tabel_relasi_ajs_putri_bungsu.xlsx
+tanggung_jawab,Tanggung jawab,Tema,1,0,1,0.0,0.0,0.0075908911138952645,1,tabel_relasi_ajs_putri_bungsu.xlsx
+pengorbanan,Pengorbanan,Tema,1,0,1,0.0,0.0,0.0075908911138952645,1,tabel_relasi_ajs_putri_bungsu.xlsx
+perebutan_pangeran,Perebutan pangeran,Tokoh,1,0,1,0.0,0.0,0.0075908911138952645,1,tabel_relasi_ajs_putri_bungsu.xlsx

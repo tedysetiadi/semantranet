@@ -1,0 +1,39 @@
+Source,Relation,Target,Weight,Documents
+Timun Mas,anak dari,Mbok Srini,1,timun_mas_ajs_.xlsx
+Timun Mas,melawan dengan,biji mentimun,1,timun_mas_ajs_.xlsx
+Timun Mas,melawan dengan,jarum,1,timun_mas_ajs_.xlsx
+Timun Mas,melawan dengan,garam,1,timun_mas_ajs_.xlsx
+Timun Mas,melawan dengan,terasi,1,timun_mas_ajs_.xlsx
+Mbok Srini,membuat perjanjian dengan,Buto Ijo,1,timun_mas_ajs_.xlsx
+Mbok Srini,mewakili,kasih ibu,1,timun_mas_ajs_.xlsx
+Buto Ijo,mengejar,Timun Mas,1,timun_mas_ajs_.xlsx
+Buto Ijo,merepresentasikan,ancaman,1,timun_mas_ajs_.xlsx
+perjanjian,memicu,ancaman,1,timun_mas_ajs_.xlsx
+alat magis,merepresentasikan,ikhtiar,1,timun_mas_ajs_.xlsx
+ikhtiar,berhubungan dengan,keselamatan,1,timun_mas_ajs_.xlsx
+kasih ibu,menguatkan,perlindungan,1,timun_mas_ajs_.xlsx
+keberanian,menolong,Timun Mas bertahan,1,timun_mas_ajs_.xlsx
+Bawang Putih,berkonflik dengan,Bawang Merah,1,bawang_merah_bawang_putih_ajs.xlsx
+Bawang Putih,merepresentasikan,kesabaran,1,bawang_merah_bawang_putih_ajs.xlsx
+Bawang Merah,merepresentasikan,iri hati,1,bawang_merah_bawang_putih_ajs.xlsx
+Ibu Tiri,memihak,Bawang Merah,1,bawang_merah_bawang_putih_ajs.xlsx
+Ibu Tiri,merepresentasikan,ketidakadilan,1,bawang_merah_bawang_putih_ajs.xlsx
+kesabaran,berhubungan dengan,balasan baik,1,bawang_merah_bawang_putih_ajs.xlsx
+iri hati,berkonflik dengan,keutamaan,1,bawang_merah_bawang_putih_ajs.xlsx
+penderitaan,dialami oleh,Bawang Putih,1,bawang_merah_bawang_putih_ajs.xlsx
+ikan ajaib,menolong,Bawang Putih,1,bawang_merah_bawang_putih_ajs.xlsx
+labu,menghasilkan,hadiah,1,bawang_merah_bawang_putih_ajs.xlsx
+hadiah,menguatkan,keadilan moral,1,bawang_merah_bawang_putih_ajs.xlsx
+keserakahan,menyebabkan,hukuman,1,bawang_merah_bawang_putih_ajs.xlsx
+hukuman,diterima oleh,Bawang Merah dan Ibu Tiri,1,bawang_merah_bawang_putih_ajs.xlsx
+Bandung Bondowoso,mencintai;mengutuk,Roro Jonggrang,2,roro_jonggrang_ajs.xlsx
+Bandung Bondowoso,memanggil,makhluk halus,1,roro_jonggrang_ajs.xlsx
+Roro Jonggrang,menolak,Bandung Bondowoso,1,roro_jonggrang_ajs.xlsx
+Roro Jonggrang,mengajukan,syarat seribu candi,1,roro_jonggrang_ajs.xlsx
+syarat seribu candi,merepresentasikan,strategi penolakan,1,roro_jonggrang_ajs.xlsx
+kecerdikan,digunakan oleh,Roro Jonggrang,1,roro_jonggrang_ajs.xlsx
+tipu daya,menggagalkan,pembangunan candi,1,roro_jonggrang_ajs.xlsx
+kutukan,mengubah,Roro Jonggrang menjadi arca,1,roro_jonggrang_ajs.xlsx
+kutukan,menguatkan,tragedi,1,roro_jonggrang_ajs.xlsx
+kekuasaan,berkonflik dengan,pilihan perempuan,1,roro_jonggrang_ajs.xlsx
+tragedi,berhubungan dengan,konsekuensi tipu daya,1,roro_jonggrang_ajs.xlsx

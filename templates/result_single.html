@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Analisis Satu Karya - SemantraNet</title>
+    <style>
+        :root {
+            --primary: #5b3cc4;
+            --primary-dark: #452b98;
+            --bg: #f7f8fc;
+            --card: #ffffff;
+            --muted: #6b7280;
+            --text: #1f2937;
+            --border: #e5e7eb;
+            --soft: #f3f0ff;
+            --success: #1f9d55;
+            --shadow: 0 8px 24px rgba(0,0,0,0.08);
+            --radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 22px;
+            margin-bottom: 22px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+            color: var(--text);
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-top: -4px;
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            transition: 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .btn-secondary {
+            background: #ede9fe;
+            color: var(--primary-dark);
+        }
+
+        .btn-secondary:hover {
+            background: #ddd6fe;
+        }
+
+        .small {
+            color: var(--muted);
+            font-size: 0.92rem;
+            line-height: 1.6;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 12px;
+        }
+
+        .stat {
+            background: var(--soft);
+            border-radius: 14px;
+            padding: 18px;
+            text-align: center;
+            border: 1px solid #e6defd;
+        }
+
+        .stat .num {
+            font-size: 1.9rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .stat .label {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .stat .sub {
+            font-size: 0.86rem;
+            color: var(--muted);
+            margin-top: 6px;
+        }
+
+        .download-row {
+            margin-top: 10px;
+        }
+
+        .img-wrap {
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        img.graph {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: white;
+            padding: 10px;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 22px;
+        }
+
+        .list-box {
+            background: #fafbff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-bottom: 14px;
+        }
+
+        .list-box h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .list-box ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .list-box li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            background: white;
+        }
+
+        th, td {
+            border-bottom: 1px solid var(--border);
+            padding: 10px 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f9fafb;
+            font-weight: 700;
+        }
+
+        tr:hover td {
+            background: #fafaff;
+        }
+
+        .chip {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #ede9fe;
+            color: var(--primary-dark);
+            font-size: 0.82rem;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+
+        .muted-box {
+            background: #fcfcff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.92rem;
+            color: var(--muted);
+            margin-top: 18px;
+        }
+
+        @media (max-width: 1100px) {
+            .summary-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 14px;
+            }
+
+            .stat .num {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="card">
+        <h1>Hasil Analisis Satu Karya</h1>
+        <p class="subtitle">Dashboard AJS-Sastra / SemantraNet</p>
+
+        <a href="/" class="btn">Kembali ke Dashboard</a>
+
+        <div class="download-row">
+            <a href="{{ url_for('serve_output', filepath=report_path) }}" class="btn btn-secondary">Lihat Report</a>
+            <a href="{{ url_for('serve_output', filepath=nodes_csv_path) }}" class="btn btn-secondary">Unduh Nodes CSV</a>
+            <a href="{{ url_for('serve_output', filepath=edges_csv_path) }}" class="btn btn-secondary">Unduh Edges CSV</a>
+            <a href="{{ url_for('serve_output', filepath=gexf_path) }}" class="btn btn-secondary">Unduh GEXF</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Ringkasan Jejaring</h2>
+        <div class="summary-grid">
+            <div class="stat">
+                <div class="num">{{ summary.n_nodes }}</div>
+                <div class="label">Jumlah Node</div>
+                <div class="sub">Simpul semantik</div>
+            </div>
+
+            <div class="stat">
+                <div class="num">{{ summary.n_edges }}</div>
+                <div class="label">Jumlah Relasi</div>
+                <div class="sub">Koneksi antarsimbol</div>
+            </div>
+
+            <div class="stat">
+                <div class="num">
+                    {% if summary.top_degree %}
+                        {{ summary.top_degree[0][0] }}
+                    {% else %}
+                        -
+                    {% endif %}
+                </div>
+                <div class="label">Node Degree Tertinggi</div>
+                <div class="sub">Pusat perputaran makna</div>
+            </div>
+
+            <div class="stat">
+                <div class="num">
+                    {% if summary.top_pagerank %}
+                        {{ summary.top_pagerank[0][0] }}
+                    {% else %}
+                        -
+                    {% endif %}
+                </div>
+                <div class="label">Node PageRank Tertinggi</div>
+                <div class="sub">Paling banyak dirujuk</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="two-col">
+        <div class="card">
+            <h2>Visualisasi Graf</h2>
+            <p class="small">
+                Graf hasil analisis jejaring semantik. Ukuran node cenderung mengikuti tingkat keterhubungan,
+                sementara relasi memetakan hubungan antar tokoh, konsep, motif, dan tema.
+            </p>
+
+            <div class="img-wrap">
+                <img class="graph" src="{{ url_for('serve_output', filepath=graph_path) }}" alt="Graph AJS">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Highlight Analisis</h2>
+
+            <div class="list-box">
+                <h3>Top Degree</h3>
+                <ul>
+                    {% if summary.top_degree %}
+                        {% for item in summary.top_degree %}
+                            <li><strong>{{ item[0] }}</strong> ({{ item[2] }}) — {{ "%.4f"|format(item[1]) }}</li>
+                        {% endfor %}
+                    {% else %}
+                        <li>Tidak ada data.</li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="list-box">
+                <h3>Top Betweenness</h3>
+                <ul>
+                    {% if summary.top_betweenness %}
+                        {% for item in summary.top_betweenness %}
+                            <li><strong>{{ item[0] }}</strong> ({{ item[2] }}) — {{ "%.4f"|format(item[1]) }}</li>
+                        {% endfor %}
+                    {% else %}
+                        <li>Tidak ada data.</li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="list-box">
+                <h3>Top PageRank</h3>
+                <ul>
+                    {% if summary.top_pagerank %}
+                        {% for item in summary.top_pagerank %}
+                            <li><strong>{{ item[0] }}</strong> ({{ item[2] }}) — {{ "%.4f"|format(item[1]) }}</li>
+                        {% endfor %}
+                    {% else %}
+                        <li>Tidak ada data.</li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div class="muted-box">
+                <h3 style="margin-top:0;">Komposisi Jenis Node</h3>
+                {% if summary.node_type_counts %}
+                    {% for key, value in summary.node_type_counts.items() %}
+                        <span class="chip">{{ key }}: {{ value }}</span>
+                    {% endfor %}
+                {% else %}
+                    <p class="small">Belum ada komposisi node.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Tabel Metrik Node</h2>
+        <p class="small">
+            Tabel ini menampilkan metrik jejaring untuk setiap simpul. Degree menunjukkan jumlah keterhubungan,
+            Betweenness menunjukkan peran sebagai penghubung, Closeness menunjukkan kedekatan ke node lain,
+            dan PageRank menunjukkan tingkat rujukan struktural.
+        </p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Tipe</th>
+                        <th>Degree</th>
+                        <th>InDegree</th>
+                        <th>OutDegree</th>
+                        <th>Betweenness</th>
+                        <th>Closeness</th>
+                        <th>PageRank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for node in nodes %}
+                    <tr>
+                        <td>{{ node.Label }}</td>
+                        <td>{{ node.Type }}</td>
+                        <td>{{ node.Degree }}</td>
+                        <td>{{ node.InDegree }}</td>
+                        <td>{{ node.OutDegree }}</td>
+                        <td>{{ "%.4f"|format(node.Betweenness) }}</td>
+                        <td>{{ "%.4f"|format(node.Closeness) }}</td>
+                        <td>{{ "%.4f"|format(node.PageRank) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Catatan Pembacaan</h2>
+        <p class="small">
+            Hasil metrik dan visualisasi ini berfungsi sebagai alat bantu untuk memperkuat <em>close reading</em>.
+            Node dengan nilai tinggi dapat dibaca sebagai pusat tema, jembatan konflik, atau titik legitimasi makna,
+            tetapi penafsiran akhir tetap berada pada analisis sastra yang kontekstual.
+        </p>
+    </div>
+
+    <div class="footer-note">
+        SemantraNet — peta makna boleh dihitung, tapi tafsir tetap tidak bisa disuruh baris-berbaris.
+    </div>
+
+</div>
+</body>
+</html>

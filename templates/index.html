@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJS-Sastra Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        :root {
+            --primary: #5b3cc4;
+            --primary-dark: #452b98;
+            --secondary: #f4f1ff;
+            --accent: #8f7cf0;
+            --text: #1f2430;
+            --muted: #6b7280;
+            --white: #ffffff;
+            --border: #e5e7eb;
+            --success: #1f9d55;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            --radius: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fc;
+            color: var(--text);
+        }
+
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 260px;
+            background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 28px 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+
+        .brand {
+            font-size: 1.6rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .brand small {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 400;
+            opacity: 0.85;
+            margin-top: 6px;
+        }
+
+        .sidebar hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.18);
+            margin: 20px 0;
+        }
+
+        .menu-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            opacity: 0.75;
+            margin-bottom: 12px;
+        }
+
+        .menu a {
+            display: block;
+            color: var(--white);
+            text-decoration: none;
+            padding: 10px 12px;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            transition: 0.2s ease;
+            font-size: 0.96rem;
+        }
+
+        .menu a:hover {
+            background: rgba(255,255,255,0.14);
+        }
+
+        .sidebar-note {
+            margin-top: 24px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.92;
+            background: rgba(255,255,255,0.08);
+            border-radius: 14px;
+            padding: 14px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 28px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ffffff, #f1edff);
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+            border: 1px solid #eee8ff;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.7fr 1fr;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .hero h1 {
+            margin: 0 0 12px;
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--primary-dark);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            border: 1px solid #ddd5ff;
+        }
+
+        .hero-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 22px;
+            box-shadow: 0 8px 20px rgba(91, 60, 196, 0.08);
+        }
+
+        .hero-card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .hero-card ul {
+            padding-left: 18px;
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            padding: 24px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--muted);
+            line-height: 1.65;
+            margin-top: 0;
+        }
+
+        .section-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 14px;
+            background: #efeaff;
+            color: var(--primary);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .upload-box {
+            border: 2px dashed #d8cffc;
+            border-radius: 18px;
+            background: #faf8ff;
+            padding: 18px;
+            margin: 18px 0;
+        }
+
+        .upload-box label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            border: none;
+            background: var(--primary);
+            color: white;
+            padding: 12px 18px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: 0.2s ease;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .btn-secondary {
+            background: #ece8ff;
+            color: var(--primary-dark);
+        }
+
+        .btn-secondary:hover {
+            background: #ddd5ff;
+        }
+
+        .help-text {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+
+        .samples {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .samples h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .sample-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .sample-item {
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 16px;
+            background: #fcfcff;
+        }
+
+        .sample-item h4 {
+            margin: 0 0 10px;
+            font-size: 1rem;
+            word-break: break-word;
+        }
+
+        .sample-item p {
+            font-size: 0.92rem;
+            color: var(--muted);
+            min-height: 50px;
+        }
+
+        .workflow {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            padding: 24px;
+        }
+
+        .workflow h2 {
+            margin-top: 0;
+        }
+
+        .workflow-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(180px, 1fr));
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .step {
+            background: #fbfaff;
+            border: 1px solid #e9e2ff;
+            border-radius: 16px;
+            padding: 18px;
+        }
+
+        .step-number {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .step h4 {
+            margin: 0 0 8px;
+            font-size: 1rem;
+        }
+
+        .step p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.6;
+            font-size: 0.92rem;
+        }
+
+        .footer-note {
+            margin-top: 24px;
+            font-size: 0.92rem;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        @media (max-width: 1080px) {
+            .hero-grid,
+            .cards,
+            .workflow-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 860px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .content {
+                padding: 18px;
+            }
+
+            .hero {
+                padding: 24px;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            SemantraNet
+            <small>AJS-Sastra Dashboard</small>
+        </div>
+
+        <hr>
+
+        <div class="menu-title">Navigasi</div>
+        <nav class="menu">
+            <a href="#single">Analisis Satu Karya</a>
+            <a href="#multi">Analisis Multi Karya</a>
+            <a href="#samples">Sample Data</a>
+            <a href="#workflow">Alur Kerja</a>
+        </nav>
+
+        <div class="sidebar-note">
+            Dashboard ini dirancang untuk membantu pemetaan jejaring semantik karya sastra Indonesia berbasis
+            <em>close reading</em>, matriks relasi, dan visualisasi graf.
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-grid">
+                <div>
+                    <h1>Dashboard Analisis Jejaring Semantik Karya Sastra Indonesia</h1>
+                    <p>
+                        AJS-Sastra membantu memetakan hubungan antar tokoh, konsep, motif, dan tema
+                        ke dalam jejaring makna yang lebih sistematis, visual, dan mudah dianalisis.
+                        Fokusnya bukan mengganti tafsir sastra, melainkan memperkuat pembacaan.
+                    </p>
+
+                    <div class="badge-row">
+                        <span class="badge">Single Text Analysis</span>
+                        <span class="badge">Multi Text Comparison</span>
+                        <span class="badge">Network Metrics</span>
+                        <span class="badge">Interpretasi Otomatis</span>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <h3>Format input Excel</h3>
+                    <ul>
+                        <li><strong>Wajib:</strong> Source, Relation, Target</li>
+                        <li><strong>Opsional:</strong> SourceType, TargetType</li>
+                        <li>Tipe node dapat berupa Tokoh, Konsep, Motif, atau Tema</li>
+                        <li>Setiap baris merepresentasikan satu relasi semantik</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANALISIS SINGLE -->
+        <section class="cards">
+            <div class="card" id="single">
+                <div class="section-icon">1</div>
+                <h2>Analisis Satu Karya Sastra</h2>
+                <p>
+                    Gunakan mode ini untuk membaca struktur makna dalam satu teks secara mendalam.
+                    Cocok untuk analisis close reading terhadap satu cerpen, novel, atau cerita rakyat.
+                </p>
+
+                <form action="{{ url_for('analyze_single') }}" method="POST" enctype="multipart/form-data">
+                    <div class="upload-box">
+                        <label for="file">Unggah file Excel</label>
+                        <input type="file" name="file" id="file" accept=".xlsx,.xls" required>
+                    </div>
+
+                    <button type="submit" class="btn">Analisis Satu Karya</button>
+                </form>
+
+                <div class="help-text">
+                    Hasil analisis akan menampilkan graf jejaring, metrik node, ringkasan tematik,
+                    dan interpretasi otomatis berbasis struktur jaringan.
+                </div>
+            </div>
+
+            <!-- ANALISIS MULTI -->
+            <div class="card" id="multi">
+                <div class="section-icon">2</div>
+                <h2>Analisis Multi Karya</h2>
+                <p>
+                    Gunakan mode ini untuk membandingkan beberapa karya sastra sekaligus.
+                    Cocok untuk melihat pola lintas teks, tema dominan, dan simpul sentral antar karya.
+                </p>
+
+                <form action="{{ url_for('analyze_multi') }}" method="POST" enctype="multipart/form-data">
+                    <div class="upload-box">
+                        <label for="files">Unggah beberapa file Excel</label>
+                        <input type="file" name="files" id="files" accept=".xlsx,.xls" multiple required>
+                    </div>
+
+                    <button type="submit" class="btn">Bandingkan Beberapa Karya</button>
+                </form>
+
+                <div class="help-text">
+                    Mode komparatif akan merangkum jumlah node, jumlah relasi, dan simpul paling menonjol
+                    pada setiap karya yang diunggah.
+                </div>
+            </div>
+        </section>
+
+        <!-- SAMPLE DATA -->
+        <section class="samples" id="samples">
+            <h2>Sample Data</h2>
+            <p style="color: var(--muted); margin-top: 0;">
+                Gunakan data contoh berikut untuk langsung mencoba dashboard tanpa menyiapkan file dari nol.
+            </p>
+
+            <div class="sample-grid">
+                {% if samples %}
+                    {% for sample in samples %}
+                    <div class="sample-item">
+                        <h4>{{ sample }}</h4>
+                        <p>
+                            Dataset contoh untuk uji alur AJS-Sastra. Klik tombol di bawah untuk menjalankan
+                            analisis otomatis.
+                        </p>
+                        <a class="btn btn-secondary" href="{{ url_for('use_sample', filename=sample) }}">
+                            Gunakan Sample
+                        </a>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="sample-item">
+                        <h4>Tidak ada sample data</h4>
+                        <p>Folder <code>sample_data</code> masih kosong.</p>
+                    </div>
+                {% endif %}
+            </div>
+        </section>
+
+        <!-- WORKFLOW -->
+        <section class="workflow" id="workflow">
+            <h2>Alur Kerja AJS-Sastra</h2>
+            <p style="color: var(--muted); margin-top: 0;">
+                Dashboard ini mengikuti alur metodologis AJS: dari close reading hingga interpretasi jejaring makna.
+            </p>
+
+            <div class="workflow-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Close Reading</h4>
+                    <p>
+                        Pembacaan teks untuk mengidentifikasi tokoh, konsep, motif, konflik, simbol, dan tema.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Matriks Relasi</h4>
+                    <p>
+                        Hasil pembacaan disusun ke Excel dalam bentuk pasangan Source–Relation–Target.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Jejaring Semantik</h4>
+                    <p>
+                        Sistem membangun graf, menghitung metrik, dan memetakan struktur hubungan antar unsur.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Interpretasi</h4>
+                    <p>
+                        Hasil graf dibaca kembali untuk mendukung pemahaman tema, pusat narasi, dan pola makna.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-note">
+            AJS-Sastra Dashboard — alat bantu analisis, bukan pengganti tafsir. Sastra tetap perlu dibaca, bukan cuma dihitung. 🙂
+        </div>
+
+    </main>
+</div>
+</body>
+</html>
