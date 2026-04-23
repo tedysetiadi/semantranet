@@ -9,9 +9,11 @@ from analysis_engine import run_full_analysis, run_multi_analysis
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = "uploads"
-OUTPUT_FOLDER = "outputs"
-SAMPLE_FOLDER = "sample_data"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
+OUTPUT_FOLDER = os.path.join(BASE_DIR, "outputs")
+SAMPLE_FOLDER = os.path.join(BASE_DIR, "sample_data")
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
@@ -32,7 +34,7 @@ def serve_output(filepath):
 
 @app.route("/download/<path:filepath>")
 def download(filepath):
-    return send_file(filepath, as_attachment=True)
+    return send_from_directory(OUTPUT_FOLDER, filepath, as_attachment=True)
 
 @app.route("/analyze_single", methods=["POST"])
 def analyze_single():
@@ -87,4 +89,5 @@ def analyze_multi():
     return render_template("result_multi.html", comparison=result)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
